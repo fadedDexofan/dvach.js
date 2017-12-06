@@ -1,0 +1,9 @@
+{
+  "author": "fadedDexofan",
+  "name": "dvach-js",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}
