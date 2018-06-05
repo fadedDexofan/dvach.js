@@ -1,7 +1,7 @@
 {
   "author": "Daniil Kharkov <fadeddexofan@gmail.com>",
   "name": "dvach.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Node.js module that wraps 2ch.hk api",
   "keywords": [
     "dvach",
@@ -20,7 +20,10 @@
   "scripts": {
     "lint": "eslint lib",
     "test": "nyc mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "preversion": "npm test",
+    "version": "git add .",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "axios": "^0.17.1"

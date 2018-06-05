@@ -1,1 +1,7 @@
 .vscode/
+coverage/
+.nyc_output
+.travis.yml
+.editorconfig
+.eslintrc
+dvach.js-*
