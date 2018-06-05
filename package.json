@@ -1,7 +1,7 @@
 {
   "author": "Daniil Kharkov <fadeddexofan@gmail.com>",
   "name": "dvach.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Node.js module that wraps 2ch.hk api",
   "keywords": [
     "dvach",
