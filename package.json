@@ -12,6 +12,10 @@
     "wrapper"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadedDexofan/dvach.js.git"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
