@@ -2,6 +2,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/fadedDexofan/dvach.js/badge.svg?branch=master)](https://coveralls.io/github/fadedDexofan/dvach.js?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/fadedDexofan/dvach.js.svg)](https://github.com/fadedDexofan/dvach.js/issues)
 [![GitHub stars](https://img.shields.io/github/stars/fadedDexofan/dvach.js.svg)](https://github.com/fadedDexofan/dvach.js/stargazers)
+[![npm downloads](https://img.shields.io/npm/dy/dvach.js.svg)](https://www.npmjs.com/package/dvach.js)
+[![npm version](https://badge.fury.io/js/dvach.js.svg)](https://badge.fury.io/js/dvach.js)
 
 # dvach.js
 
