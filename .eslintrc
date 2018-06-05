@@ -10,7 +10,7 @@
     "sourceType": "script"
   },
   "rules": {
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": "off",
     "quotes": ["error", "double"],
     "arrow-parens": ["error", "always"],
     "no-console": "off",
