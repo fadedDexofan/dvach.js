@@ -26,7 +26,7 @@ describe("getTop function test", async () => {
 
   it("should fail to get top of threads", async () => {
     try {
-      const _top = await DvachApi.getTop("b", "error", 5);
+      const ignoredTop = await DvachApi.getTop("b", "error", 5);
     } catch (err) {
       expect(err.message).to.equal("Wrong sort type");
     }

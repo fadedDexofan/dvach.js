@@ -37,19 +37,14 @@ describe("getBoard function test", async () => {
       "trip",
     );
 
-    expect(result[0].toString()).to.be.equals(
-      `<[${result[0].num}]: ${result[0].post.comment}>`,
-    );
+    expect(result[0].toString()).to.be.equals(`<[${result[0].num}]: ${result[0].post.comment}>`);
   });
 
   it("should return that board does not exists", async () => {
     try {
-      const _result = await DvachApi.getBoard("undefined");
+      const ignoredResult = await DvachApi.getBoard("undefined");
     } catch (err) {
-      expect(err).to.have.property(
-        "message",
-        "Request failed with status code 404",
-      );
+      expect(err).to.have.property("message", "Request failed with status code 404");
     }
   });
 });

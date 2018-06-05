@@ -25,8 +25,7 @@
     "Telegraf"
   ],
   "editor.tabSize": 2,
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
   "files.eol": "\r\n",
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  "eslint.enable": false
+  "eslint.enable": true
 }

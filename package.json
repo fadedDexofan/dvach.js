@@ -16,8 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/fadedDexofan/dvach.js.git"
   },
-  "main": "lib/index.js",
+  "main": "lib",
   "scripts": {
+    "lint": "eslint lib",
     "test": "nyc mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
@@ -27,7 +28,11 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
     "mocha": "^5.2.0",
-    "nyc": "^12.0.2"
+    "nyc": "^12.0.2",
+    "prettier-eslint": "^8.8.1"
   }
 }

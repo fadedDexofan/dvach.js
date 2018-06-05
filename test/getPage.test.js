@@ -40,12 +40,9 @@ describe("getPage function test", async () => {
 
   it("should return that page does not exists", async () => {
     try {
-      const _result = await DvachApi.getPage(50, "b");
+      const ignoredResult = await DvachApi.getPage(50, "b");
     } catch (err) {
-      expect(err).to.have.property(
-        "message",
-        "Request failed with status code 404",
-      );
+      expect(err).to.have.property("message", "Request failed with status code 404");
     }
   });
 });
