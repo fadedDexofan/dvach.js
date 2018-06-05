@@ -1,10 +1,11 @@
-const { DvachApi } = require("../dist");
+const DvachApi = require("../");
 
 const { expect } = require("chai");
 
 describe("getBoard function test", async () => {
   it("should return board threads", async () => {
     const result = await DvachApi.getBoard("b");
+    expect(result);
     expect(result).to.be.an("array");
     expect(result[0]).to.have.all.keys(
       "lasthit",
@@ -35,11 +36,15 @@ describe("getBoard function test", async () => {
       "timestamp",
       "trip",
     );
+
+    expect(result[0].toString()).to.be.equals(
+      `<[${result[0].num}]: ${result[0].post.comment}>`,
+    );
   });
 
   it("should return that board does not exists", async () => {
     try {
-      const result = await DvachApi.getBoard("undefined");
+      const _result = await DvachApi.getBoard("undefined");
     } catch (err) {
       expect(err).to.have.property(
         "message",
