@@ -1,9 +1,38 @@
 {
-  "author": "fadedDexofan",
-  "name": "dvach-js",
+  "author": "Daniil Kharkov <fadeddexofan@gmail.com>",
+  "name": "dvach.js",
   "version": "0.0.1",
+  "description": "A Node.js module that wraps 2ch.hk api",
+  "keywords": [
+    "dvach",
+    "2ch.hk",
+    "2ch",
+    "lib",
+    "api",
+    "wrapper"
+  ],
   "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "nyc mocha --timeout=5000",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
   "dependencies": {
     "axios": "^0.17.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.3",
+    "@types/mocha": "^5.2.1",
+    "@types/node": "^10.3.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-language-service": "^0.9.9",
+    "typescript": "^2.9.1"
   }
 }

@@ -1,5 +1,5 @@
-'use strict';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class Post {
     constructor(post) {
         this.banned = post.banned;
@@ -19,8 +19,11 @@ class Post {
         this.subject = post.subject;
         this.tags = post.tags;
         this.timestamp = post.timestamp;
-        this.trip = post.trip
+        this.trip = post.trip;
+    }
+    toString() {
+        return `<[${this.num}]: ${this.comment}>`;
     }
 }
-
-module.exports = Post;
+exports.Post = Post;
+//# sourceMappingURL=C:/Users/faded/Documents/Code/dvach-js/dist/models/Post.js.map

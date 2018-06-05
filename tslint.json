@@ -1,0 +1,23 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "no-null-keyword": false,
+    "promise-function-async": true,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "no-unused-variable": [true, { "ignore-pattern": "^_" }],
+    "member-access": [true, "no-public"],
+    "no-console": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
+  },
+  "cliOptions": {
+    "exclude": ["node_modules"]
+  }
+}
